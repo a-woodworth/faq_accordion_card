@@ -22,12 +22,14 @@ body {
 }
 
 h1 {
-  padding-top: 28px;
+  text-align: center;
 }
 
 .grid {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: auto 2rem;
+  margin-inline: 1.5rem;
   min-height: 100vh;
 }
 
@@ -36,20 +38,41 @@ h1 {
   box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
   border-radius: 23px;
   margin: auto;
+  min-height: 33.4375rem;
+  padding-inline: 1.5rem;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.img-container {
+  background-position: top;
+  padding: 2.5rem 2.8125rem 5rem 2.8125rem;
+}
+
+main {
   position: relative;
 }
 
-header img {
+.faq__image,
+.faq__image-shadow {
+  background-repeat: no-repeat;
   position: absolute;
-  max-width: 14.8125rem;
-  padding-bottom: 132px;
+  transform: translate(-50%, -50%);
+  width: 15rem;
+}
+
+.faq__image {
+  background-image: url("images/illustration-woman-online-mobile.svg");
+  height: 11.25rem;
+  left: 50%;
+  top: -1rem;
+  z-index: 2;
+}
+
+.faq__image-shadow {
+  background-image: url("images/bg-pattern-mobile.svg");
+  left: 50%;
+  top: 3rem;
+  height: 6.6875rem;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=styles.css.map */

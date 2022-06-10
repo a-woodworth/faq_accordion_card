@@ -4,3 +4,31 @@
 
 @use '../utilities/variables' as *;
 @use '../utilities/mixins' as *;
+
+main {
+  position: relative;
+}
+
+.faq__image,
+.faq__image-shadow {
+  background-repeat: no-repeat;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 15rem;
+}
+
+.faq__image {
+  background-image: url('images/illustration-woman-online-mobile.svg');
+  height: 11.25rem;
+  left: 50%;
+  top: -1rem;
+  z-index: 2;
+}
+
+.faq__image-shadow {
+  background-image: url('images/bg-pattern-mobile.svg');
+  left: 50%;
+  top: 3rem;
+  height: 6.6875rem;
+  z-index: 1;
+}

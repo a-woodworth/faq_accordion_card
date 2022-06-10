@@ -1,5 +1,5 @@
 // ___________________________________________________________________
-// Containers
+// Containers and Background Image
 // ___________________________________________________________________
 
 @use '../utilities/variables' as *;
@@ -7,6 +7,8 @@
 .grid {
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: auto 2rem;
+  margin-inline: 1.5rem;
   min-height: 100vh;
 }
 
@@ -15,4 +17,11 @@
   box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
   border-radius: 23px;
   margin: auto;
+  min-height: 33.4375rem;
+  padding-inline: 1.5rem;
+}
+
+.img-container {
+  background-position: top;
+  padding: 2.5rem 2.8125rem 5rem 2.8125rem;
 }
