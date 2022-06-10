@@ -1,0 +1,55 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body,
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(180deg, hsl(273, 75%, 66%) 0%, hsl(240, 73%, 65%) 100%);
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+h1 {
+  padding-top: 28px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
+  border-radius: 23px;
+  margin: auto;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+header img {
+  position: absolute;
+  max-width: 14.8125rem;
+  padding-bottom: 132px;
+}
+
+/*# sourceMappingURL=styles.css.map */

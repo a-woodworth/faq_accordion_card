@@ -1,0 +1,34 @@
+// ___________________________________________________________________
+// Global Config
+// ___________________________________________________________________
+
+//Font Stack
+$font-family--primary: 'Kumbh Sans', sans-serif;
+
+// Font Weights
+$font-weight--bold: 700;
+$font-weight--regular: 400;
+
+// Colors
+$blue: #{'hsl(240, 73%, 65%)'};
+$dark-blue: #{'hsl(238, 29%, 16%)'};
+$dark-gray: #{'hsl(237, 12%, 33%)'};
+$purple-rain: #{'linear-gradient(180deg, hsl(273, 75%, 66%) 0%, hsl(240, 73%, 65%) 100%)'};
+$violet: #{'hsl(273, 75%, 66%)'};
+$white: #{'hsl(0, 0%, 100%)'};
+
+// Color Usage
+$color-bg-main: $purple-rain;
+$color-text-primary: $dark-gray;
+$color-text-active: $dark-blue;
+
+
+// Text
+$headingL: 2.5rem;
+$bodyM: 1.125rem;
+$bodyS: 1rem;
+
+// Line Height
+$line-BodyS: 1.75;
+
+// Breakpoints

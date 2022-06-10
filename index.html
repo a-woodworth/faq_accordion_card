@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link href="styles.css" rel="stylesheet" />
     
     <title>Frontend Mentor | FAQ Accordion Card</title>
 
@@ -18,98 +19,101 @@
     </style>
   </head>
 
-  <body>
-    <header>
-      <h1 class="page__title">FAQ</h1>
-    </header>
-    <main>
-      <section class="accordion" id="accordionGroup">
-        <h2>
-          <button class="accordion__trigger" id="accordion__title_1" 
-            aria-controls="accordion__content_1" aria-expanded="false" 
-            aria-selected="false">
-            <span class="accordion__heading">
-              How many team members can I invite?
-            </span>
-            <span class="accordion__icon">
-              <img src="images/icon-arrow-down.svg" alt="">
-            </span>
-          </button>        
-        </h2>
-        <div class="accordion__content" id="accordion__content_1" role="region" 
-          aria-hidden="true" aria-labelledby="accordion__title_1">
-          <p>You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
+  <body class="grid">
+    <div class="container">
+      <header>
+        <img src="images/illustration-woman-online-mobile.svg" alt="">
+        <h1 class="page__title">FAQ</h1>
+      </header>
+      <main>
+        <section class="accordion" id="accordionGroup">
+          <h2>
+            <button class="accordion__trigger" id="accordion__title_1" 
+              aria-controls="accordion__content_1" aria-expanded="false" 
+              aria-selected="false">
+              <span class="accordion__heading">
+                How many team members can I invite?
+              </span>
+              <span class="accordion__icon">
+                <img src="images/icon-arrow-down.svg" alt="">
+              </span>
+            </button>        
+          </h2>
+          <div class="accordion__content" id="accordion__content_1" role="region" 
+            aria-hidden="true" aria-labelledby="accordion__title_1">
+            <p>You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
+          </div>
+          <h2>
+            <button class="accordion__trigger" id="accordion__title_2" 
+              aria-controls="accordion__content_2" aria-expanded="false" 
+              aria-selected="false">
+              <span class="accordion__heading">
+                What is the maximum file upload size?
+              </span>
+              <span class="accordion__icon">
+                <img src="images/icon-arrow-down.svg" alt="">
+              </span>
+            </button>        
+          </h2>
+          <div class="accordion__content" id="accordion__content_2" role="region" 
+            aria-hidden="true" aria-labelledby="accordion__title_2">
+            <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
+          </div>
+          <h2>
+            <button class="accordion__trigger" id="accordion__title_3" 
+              aria-controls="accordion__content_3" aria-expanded="false" 
+              aria-selected="false">
+              <span class="accordion__heading">
+                How do I reset my password?
+              </span>
+              <span class="accordion__icon">
+                <img src="images/icon-arrow-down.svg" alt="">
+              </span>
+            </button>        
+          </h2>
+          <div class="accordion__content" id="accordion__content_3" role="region" 
+            aria-hidden="true" aria-labelledby="accordion__title_3">
+            <p>Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
+          </div>
+          <h2>
+            <button class="accordion__trigger" id="accordion__title_4" 
+              aria-controls="accordion__content_4" aria-expanded="false" 
+              aria-selected="false">
+              <span class="accordion__heading">
+                Can I cancel my subscription?
+              </span>
+              <span class="accordion__icon">
+                <img src="images/icon-arrow-down.svg" alt="">
+              </span>
+            </button>        
+          </h2>
+          <div class="accordion__content" id="accordion__content_4" role="region" 
+            aria-hidden="true" aria-labelledby="accordion__title_4">
+            <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
+          </div>
+          <h2>
+            <button class="accordion__trigger" id="accordion__title_5" 
+              aria-controls="accordion__content_5" aria-expanded="false" 
+              aria-selected="false">
+              <span class="accordion__heading">
+                Do you provide additional support?
+              </span>
+              <span class="accordion__icon">
+                <img src="images/icon-arrow-down.svg" alt="">
+              </span>
+            </button>        
+          </h2>
+          <div class="accordion__content" id="accordion__content_5" role="region" 
+            aria-hidden="true" aria-labelledby="accordion__title_5">
+            <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="attribution">
+          <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/a-woodworth" target="_blank">a-woodworth</a>.</p>
         </div>
-        <h2>
-          <button class="accordion__trigger" id="accordion__title_2" 
-            aria-controls="accordion__content_2" aria-expanded="false" 
-            aria-selected="false">
-            <span class="accordion__heading">
-              What is the maximum file upload size?
-            </span>
-            <span class="accordion__icon">
-              <img src="images/icon-arrow-down.svg" alt="">
-            </span>
-          </button>        
-        </h2>
-        <div class="accordion__content" id="accordion__content_2" role="region" 
-          aria-hidden="true" aria-labelledby="accordion__title_2">
-          <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
-        </div>
-        <h2>
-          <button class="accordion__trigger" id="accordion__title_3" 
-            aria-controls="accordion__content_3" aria-expanded="false" 
-            aria-selected="false">
-            <span class="accordion__heading">
-              How do I reset my password?
-            </span>
-            <span class="accordion__icon">
-              <img src="images/icon-arrow-down.svg" alt="">
-            </span>
-          </button>        
-        </h2>
-        <div class="accordion__content" id="accordion__content_3" role="region" 
-          aria-hidden="true" aria-labelledby="accordion__title_3">
-          <p>Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
-        </div>
-        <h2>
-          <button class="accordion__trigger" id="accordion__title_4" 
-            aria-controls="accordion__content_4" aria-expanded="false" 
-            aria-selected="false">
-            <span class="accordion__heading">
-              Can I cancel my subscription?
-            </span>
-            <span class="accordion__icon">
-              <img src="images/icon-arrow-down.svg" alt="">
-            </span>
-          </button>        
-        </h2>
-        <div class="accordion__content" id="accordion__content_4" role="region" 
-          aria-hidden="true" aria-labelledby="accordion__title_4">
-          <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
-        </div>
-        <h2>
-          <button class="accordion__trigger" id="accordion__title_5" 
-            aria-controls="accordion__content_5" aria-expanded="false" 
-            aria-selected="false">
-            <span class="accordion__heading">
-              Do you provide additional support?
-            </span>
-            <span class="accordion__icon">
-              <img src="images/icon-arrow-down.svg" alt="">
-            </span>
-          </button>        
-        </h2>
-        <div class="accordion__content" id="accordion__content_5" role="region" 
-          aria-hidden="true" aria-labelledby="accordion__title_5">
-          <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
-        </div>
-      </section>
-    </main>
-    <footer>
-      <div class="attribution">
-        <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/a-woodworth" target="_blank">a-woodworth</a>.</p>
-      </div>
-    </footer>
+      </footer>
+    </div>
   </body>
 </html>

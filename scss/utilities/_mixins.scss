@@ -1,0 +1,15 @@
+// ___________________________________________________________________
+// Mixins
+// ___________________________________________________________________
+
+// Rounded Border
+@mixin rounded($radius) {
+  border-radius: $radius;
+}
+
+// Text
+@mixin text($size, $weight: null, $color: null) {
+  font-size: $size;
+  font-weight: $weight;
+  color: $color;
+}
