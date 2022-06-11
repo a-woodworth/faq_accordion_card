@@ -32,3 +32,28 @@ main {
   height: 6.6875rem;
   z-index: 1;
 }
+
+.accordion h2 {
+  padding-bottom: 1.25rem;
+  min-width: 14.6875rem;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.accordion__trigger {
+  background-color: $color-bg-secondary;
+  font-family: $font-family--primary;
+  border: none;
+  display: grid;
+  grid-template-columns: 1fr 1rem;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.accordion__heading {
+  text-align: left;
+}
+
+.accordion__icon {
+  margin-left: auto;
+}

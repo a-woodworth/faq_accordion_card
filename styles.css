@@ -19,6 +19,7 @@ p {
 body {
   background: linear-gradient(180deg, hsl(273, 75%, 66%) 0%, hsl(240, 73%, 65%) 100%);
   font-family: "Kumbh Sans", sans-serif;
+  margin-top: 2.5rem;
 }
 
 h1 {
@@ -36,7 +37,7 @@ h1 {
 .container {
   background-color: hsl(0, 0%, 100%);
   box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
-  border-radius: 23px;
+  border-radius: 1.5rem;
   margin: auto;
   min-height: 33.4375rem;
   padding-inline: 1.5rem;
@@ -73,6 +74,31 @@ main {
   top: 3rem;
   height: 6.6875rem;
   z-index: 1;
+}
+
+.accordion h2 {
+  padding-bottom: 1.25rem;
+  min-width: 14.6875rem;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.accordion__trigger {
+  background-color: hsl(0, 0%, 100%);
+  font-family: "Kumbh Sans", sans-serif;
+  border: none;
+  display: grid;
+  grid-template-columns: 1fr 1rem;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.accordion__heading {
+  text-align: left;
+}
+
+.accordion__icon {
+  margin-left: auto;
 }
 
 /*# sourceMappingURL=styles.css.map */
