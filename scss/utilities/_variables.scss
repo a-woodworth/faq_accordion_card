@@ -13,23 +13,32 @@ $font-weight--regular: 400;
 $blue: #{'hsl(240, 73%, 65%)'};
 $dark-blue: #{'hsl(238, 29%, 16%)'};
 $dark-gray: #{'hsl(237, 12%, 33%)'};
+$gray: #{'hsl(240, 6%, 50%)'};
+$gray-blue: #{'hsl(240, 5%, 91%)'};
 $purple-rain: #{'linear-gradient(180deg, hsl(273, 75%, 66%) 0%, hsl(240, 73%, 65%) 100%)'};
+$soft-red: #{'hsl(14, 88%, 65%)'};
 $violet: #{'hsl(273, 75%, 66%)'};
 $white: #{'hsl(0, 0%, 100%)'};
 
 // Color Usage
 $color-bg-primary: $purple-rain;
 $color-bg-secondary: $white;
-$color-text-primary: $dark-gray;
+$color-divider: $gray-blue;
+$color-text-primary: $dark-blue;
+$color-text-secondary: $dark-gray;
+$color-text-tertiary: $gray;
 $color-text-active: $dark-blue;
-
+$color-text-hover: $soft-red;
 
 // Text
-$headingL: 2.5rem;
-$bodyM: 1.125rem;
-$bodyS: 1rem;
+$headingL: 2rem;
+$headingM: 0.875rem;
+$headingS: 0.8125rem;
+$body__default: 0.75rem;
 
 // Line Height
-$line-BodyS: 1.75;
+$line__heading: 1.24;
+$line__body: 1.5; 
 
 // Breakpoints
+$brkpoint-md: '(min-width: 62.5rem)';

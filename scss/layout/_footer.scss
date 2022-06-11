@@ -3,3 +3,23 @@
 // ___________________________________________________________________
 
 @use '../utilities/variables' as *;
+@use '../utilities/mixins' as *;
+
+.attribution {
+  padding: .5rem 0;
+  text-align: center;
+  width: 100%;
+
+  p {
+     @include text($body__default, $font-weight--regular, $white);
+  }
+
+  a {
+    color: $white;
+    text-decoration: none;
+
+    &:hover {
+      color: $soft-red;
+    }
+  } 
+}

@@ -23,7 +23,18 @@ body {
 }
 
 h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: hsl(238, 29%, 16%);
+  line-height: 1.24;
   text-align: center;
+}
+
+p {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: hsl(240, 6%, 50%);
+  line-height: 1.5;
 }
 
 .grid {
@@ -39,66 +50,165 @@ h1 {
   box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
   border-radius: 1.5rem;
   margin: auto;
-  min-height: 33.4375rem;
   padding-inline: 1.5rem;
+}
+@media (min-width: 62.5rem) {
+  .container {
+    max-height: 48rem;
+    width: 57.5rem;
+  }
 }
 
 .img-container {
   background-position: top;
   padding: 2.5rem 2.8125rem 5rem 2.8125rem;
 }
+@media (min-width: 62.5rem) {
+  .img-container {
+    background-position: left;
+    padding: 0;
+  }
+}
 
 main {
+  padding-bottom: 3rem;
   position: relative;
 }
 
 .faq__image,
-.faq__image-shadow {
+.faq__image-shadow,
+.faq__image-box {
   background-repeat: no-repeat;
   position: absolute;
   transform: translate(-50%, -50%);
   width: 15rem;
 }
+@media (min-width: 62.5rem) {
+  .faq__image,
+.faq__image-shadow,
+.faq__image-box {
+    width: 12.5rem;
+  }
+}
 
 .faq__image {
-  background-image: url("images/illustration-woman-online-mobile.svg");
-  height: 11.25rem;
+  height: 11.5rem;
   left: 50%;
   top: -1rem;
   z-index: 2;
 }
+@media (min-width: 62.5rem) {
+  .faq__image {
+    height: 22.5rem;
+    left: 0;
+    top: 50%;
+  }
+}
 
 .faq__image-shadow {
-  background-image: url("images/bg-pattern-mobile.svg");
   left: 50%;
   top: 3rem;
   height: 6.6875rem;
   z-index: 1;
 }
+@media (min-width: 62.5rem) {
+  .faq__image-shadow {
+    height: auto;
+    left: -55%;
+    bottom: -22rem;
+  }
+}
+
+.faq__image-box {
+  display: none;
+}
+@media (min-width: 62.5rem) {
+  .faq__image-box {
+    display: block;
+    left: 0;
+    top: 50%;
+    bottom: 8rem;
+    z-index: 3;
+  }
+}
 
 .accordion h2 {
-  padding-bottom: 1.25rem;
-  min-width: 14.6875rem;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
   display: grid;
   grid-template-columns: 1fr;
+  min-width: 14.6875rem;
+  padding-bottom: 1.125rem;
+  padding-top: 1.188rem;
+}
+
+.accordion h2.active {
+  border-bottom: none;
 }
 
 .accordion__trigger {
   background-color: hsl(0, 0%, 100%);
-  font-family: "Kumbh Sans", sans-serif;
   border: none;
+  cursor: pointer;
   display: grid;
+  font-family: "Kumbh Sans", sans-serif;
   grid-template-columns: 1fr 1rem;
   gap: 1rem;
   justify-content: space-between;
+  padding: 0;
+}
+
+.accordion__trigger:focus {
+  outline: 4px solid transparent;
 }
 
 .accordion__heading {
+  font-size: 0.8125rem;
+  font-weight: 400;
+  color: hsl(237, 12%, 33%);
+  line-height: 1.24;
   text-align: left;
+}
+.accordion__heading:hover {
+  color: hsl(14, 88%, 65%);
 }
 
 .accordion__icon {
   margin-left: auto;
+}
+
+.accordion__content {
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  padding-right: 2rem;
+  min-width: 14.6875rem;
+  padding-bottom: 1rem;
+}
+
+.accordion__trigger[aria-expanded=true] .accordion__heading {
+  font-size: 0.8125rem;
+  font-weight: 700;
+  color: hsl(238, 29%, 16%);
+}
+
+.accordion__trigger[aria-expanded=true] .accordion__icon {
+  transform: rotate(-180deg);
+}
+
+.attribution {
+  padding: 0.5rem 0;
+  text-align: center;
+  width: 100%;
+}
+.attribution p {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: hsl(0, 0%, 100%);
+}
+.attribution a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+.attribution a:hover {
+  color: hsl(14, 88%, 65%);
 }
 
 /*# sourceMappingURL=styles.css.map */

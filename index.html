@@ -11,20 +11,33 @@
     <link href="styles.css" rel="stylesheet" />
     
     <title>Frontend Mentor | FAQ Accordion Card</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution { font-size: 11px; text-align: center; }
-      .attribution a { color: hsl(228, 45%, 44%); }
-    </style>
   </head>
 
   <body class="grid">
     <div class="container">
       <main>
         <div class="img-container">
-          <div class="faq__image"></div>
-          <div class="faq__image-shadow"></div>
+          <picture class="faq__image">
+            <source 
+              type="image/svg+xml"
+              media="(min-width: 62.5rem)"
+              srcset="images/illustration-woman-online-desktop.svg">
+            <img src="images/illustration-woman-online-mobile.svg" alt="">
+          </picture>
+          <picture class="faq__image-shadow">
+            <source 
+              type="image/svg+xml"
+              media="(min-width: 62.5rem)"
+              srcset="images/bg-pattern-desktop.svg">
+            <img src="images/bg-pattern-mobile.svg" alt="">
+          </picture>
+          <picture class="faq__image-box">
+            <source 
+              type="image/svg+xml"
+              media="(min-width: 62.5rem)"
+              srcset="images/illustration-box-desktop.svg">
+            <img src="images/illustration-box-desktop.svg" alt="">
+          </picture>
         </div>
         <h1 class="page__title">FAQ</h1>
         <section class="accordion" id="accordionGroup">
@@ -33,7 +46,8 @@
               class="accordion__trigger" 
               id="accordion__title_1" 
               aria-controls="accordion__content_1" 
-              aria-expanded="false">
+              aria-expanded="false"
+              tabindex="0">
               <span class="accordion__heading">How many team members can I invite?</span>
               <span class="accordion__icon">
                 <img src="images/icon-arrow-down.svg" alt="">
@@ -49,7 +63,8 @@
               class="accordion__trigger"
               id="accordion__title_2"
               aria-controls="accordion__content_2"
-              aria-expanded="true">
+              aria-expanded="true"
+              tabindex="0">
               <span  class="accordion__heading">
                 What is the maximum file upload size?
               </span>
@@ -67,7 +82,8 @@
               class="accordion__trigger"
               id="accordion__title_3"
               aria-controls="accordion__content_3"
-              aria-expanded="false">
+              aria-expanded="false"
+              tabindex="0">
               <span class="accordion__heading">
                 How do I reset my password?
               </span>
@@ -85,7 +101,8 @@
               class="accordion__trigger"
               id="accordion__title_4" 
               aria-controls="accordion__content_4"
-              aria-expanded="false">
+              aria-expanded="false"
+              tabindex="0">
               <span class="accordion__heading">
                 Can I cancel my subscription?
               </span>
@@ -103,7 +120,8 @@
               class="accordion__trigger"
               id="accordion__title_5"
               aria-controls="accordion__content_5"
-              aria-expanded="false">
+              aria-expanded="false"
+              tabindex="0">
               <span class="accordion__heading">
                 Do you provide additional support?
               </span>
