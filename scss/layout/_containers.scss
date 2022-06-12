@@ -10,6 +10,10 @@
   grid-template-rows: auto 2rem;
   margin-inline: 1.5rem;
   min-height: 100vh;
+
+  @media #{$brkpoint-md} {
+    position: relative;
+  }
 }
 
 .container {
@@ -17,20 +21,26 @@
   box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
   border-radius: 1.5rem;
   margin: auto;
-  padding-inline: 1.5rem;
 
   @media #{$brkpoint-md} {
-    max-height: 48rem;
+    overflow-x: hidden;
+    overflow-y: hidden;
     width: 57.5rem;
+    display: flex;
+    flex-direction: column nowrap;
+    justify-content: space-evenly;
+    padding-bottom: 5.25rem;
+    padding-top: 4.125rem;
+    position: relative;
   }
 }
 
 .img-container {
-  background-position: top;
   padding: 2.5rem 2.8125rem 5rem 2.8125rem;
 
   @media #{$brkpoint-md} {
-    background-position: left;
+    flex-basis: 50%;
+    align-self: flex-start;
     padding: 0;
   }
 }

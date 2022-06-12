@@ -27,7 +27,13 @@ h1 {
   font-weight: 700;
   color: hsl(238, 29%, 16%);
   line-height: 1.24;
+  padding-bottom: 1.25rem;
   text-align: center;
+}
+@media (min-width: 62.5rem) {
+  h1 {
+    text-align: left;
+  }
 }
 
 p {
@@ -44,35 +50,47 @@ p {
   margin-inline: 1.5rem;
   min-height: 100vh;
 }
+@media (min-width: 62.5rem) {
+  .grid {
+    position: relative;
+  }
+}
 
 .container {
   background-color: hsl(0, 0%, 100%);
   box-shadow: 0px 50px 50px -20px rgba(53, 18, 122, 0.497159);
   border-radius: 1.5rem;
   margin: auto;
-  padding-inline: 1.5rem;
 }
 @media (min-width: 62.5rem) {
   .container {
-    max-height: 48rem;
+    overflow-x: hidden;
+    overflow-y: hidden;
     width: 57.5rem;
+    display: flex;
+    flex-direction: column nowrap;
+    justify-content: space-evenly;
+    padding-bottom: 5.25rem;
+    padding-top: 4.125rem;
+    position: relative;
   }
 }
 
 .img-container {
-  background-position: top;
   padding: 2.5rem 2.8125rem 5rem 2.8125rem;
 }
 @media (min-width: 62.5rem) {
   .img-container {
-    background-position: left;
+    flex-basis: 50%;
+    align-self: flex-start;
     padding: 0;
   }
 }
 
 main {
-  padding-bottom: 3rem;
   position: relative;
+  max-width: 62.5rem;
+  margin: auto;
 }
 
 .faq__image,
@@ -88,6 +106,7 @@ main {
 .faq__image-shadow,
 .faq__image-box {
     width: 12.5rem;
+    overflow-x: visible;
   }
 }
 
@@ -114,8 +133,8 @@ main {
 @media (min-width: 62.5rem) {
   .faq__image-shadow {
     height: auto;
-    left: -55%;
-    bottom: -22rem;
+    left: -53%;
+    top: 37.25%;
   }
 }
 
@@ -125,10 +144,20 @@ main {
 @media (min-width: 62.5rem) {
   .faq__image-box {
     display: block;
-    left: 0;
-    top: 50%;
-    bottom: 8rem;
+    left: -0.5rem;
+    top: 58%;
     z-index: 3;
+  }
+}
+
+.accordion {
+  padding: 0 1.5rem 3rem 1.5rem;
+}
+@media (min-width: 62.5rem) {
+  .accordion {
+    flex-basis: 50%;
+    align-self: flex-end;
+    padding: 0 6rem 0 1rem;
   }
 }
 
@@ -137,8 +166,8 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   min-width: 14.6875rem;
-  padding-bottom: 1.125rem;
-  padding-top: 1.188rem;
+  padding-bottom: 1.25rem;
+  padding-top: 1.25rem;
 }
 
 .accordion h2.active {

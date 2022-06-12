@@ -14,8 +14,15 @@
   </head>
 
   <body class="grid">
-    <div class="container">
-      <main>
+    <main>
+      <picture class="faq__image-box">
+        <source 
+          type="image/svg+xml"
+          media="(min-width: 62.5rem)"
+          srcset="images/illustration-box-desktop.svg">
+        <img src="images/illustration-box-desktop.svg" alt="">
+      </picture>
+      <div class="container">
         <div class="img-container">
           <picture class="faq__image">
             <source 
@@ -31,16 +38,9 @@
               srcset="images/bg-pattern-desktop.svg">
             <img src="images/bg-pattern-mobile.svg" alt="">
           </picture>
-          <picture class="faq__image-box">
-            <source 
-              type="image/svg+xml"
-              media="(min-width: 62.5rem)"
-              srcset="images/illustration-box-desktop.svg">
-            <img src="images/illustration-box-desktop.svg" alt="">
-          </picture>
         </div>
-        <h1 class="page__title">FAQ</h1>
         <section class="accordion" id="accordionGroup">
+          <h1 class="page__title">FAQ</h1>
           <h2>
             <button 
               class="accordion__trigger" 
@@ -135,8 +135,8 @@
             <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
           </div>
         </section>
-      </main>
-    </div>
+      </div>
+    </main>
     <footer>
       <div class="attribution">
         <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/a-woodworth" target="_blank">a-woodworth</a>.</p>

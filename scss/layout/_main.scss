@@ -6,8 +6,9 @@
 @use '../utilities/mixins' as *;
 
 main {
-  padding-bottom: 3rem;
   position: relative;
+  max-width: 62.5rem;
+  margin: auto;
 }
 
 .faq__image,
@@ -20,6 +21,7 @@ main {
 
   @media #{$brkpoint-md} {
     width: 12.5rem;
+    overflow-x: visible;
   }
 }
 
@@ -44,8 +46,8 @@ main {
 
   @media #{$brkpoint-md} {
     height: auto;
-    left: -55%;
-    bottom: -22rem;
+    left: -53%;
+    top: 37.25%;
   }
 }
 
@@ -54,10 +56,19 @@ main {
 
   @media #{$brkpoint-md} {
     display: block;
-    left: 0;
-    top: 50%;
-    bottom: 8rem;
+    left: -0.5rem;
+    top: 58%;
     z-index: 3;
+  }
+}
+
+.accordion {
+  padding: 0 1.5rem 3rem 1.5rem;
+
+  @media #{$brkpoint-md} {
+    flex-basis: 50%;
+    align-self: flex-end;
+    padding: 0 6rem 0 1rem;
   }
 }
 
@@ -66,8 +77,8 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   min-width: 14.6875rem;
-  padding-bottom: 1.125rem;
-  padding-top: 1.188rem;
+  padding-bottom: 1.25rem;
+  padding-top: 1.25rem;
 }
 
 .accordion h2.active {
