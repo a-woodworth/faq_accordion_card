@@ -41,21 +41,21 @@
         </div>
         <section class="accordion" id="accordionGroup">
           <h1 class="page__title">FAQ</h1>
-          <h2>
+          <h2 class="active">
             <button 
               class="accordion__trigger" 
               id="accordion__title_1" 
               aria-controls="accordion__content_1" 
-              aria-expanded="false"
+              aria-expanded="true"
               tabindex="0">
               <span class="accordion__heading">How many team members can I invite?</span>
               <span class="accordion__icon">
-                <img src="images/icon-arrow-down.svg" alt="">
+                <img src="images/icon-arrow-down.svg" alt="" aria-hidden="true">
               </span>
             </button>        
           </h2>
           <div class="accordion__content" id="accordion__content_1" role="region" 
-            aria-hidden="true" aria-labelledby="accordion__title_1" hidden>
+            aria-hidden="true" aria-labelledby="accordion__title_1">
             <p>You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
           </div>
           <h2 class="active">
@@ -69,7 +69,7 @@
                 What is the maximum file upload size?
               </span>
               <span class="accordion__icon">
-                <img src="images/icon-arrow-down.svg" alt="">
+                <img src="images/icon-arrow-down.svg" alt="" aria-hidden="true">
               </span>
             </button>        
           </h2>
@@ -77,70 +77,71 @@
             aria-hidden="false" aria-labelledby="accordion__title_2">
             <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
           </div>
-          <h2>
+          <h2 class="active">
             <button 
               class="accordion__trigger"
               id="accordion__title_3"
               aria-controls="accordion__content_3"
-              aria-expanded="false"
+              aria-expanded="true"
               tabindex="0">
               <span class="accordion__heading">
                 How do I reset my password?
               </span>
               <span class="accordion__icon">
-                <img src="images/icon-arrow-down.svg" alt="">
+                <img src="images/icon-arrow-down.svg" alt="" aria-hidden="true">
               </span>
             </button>        
           </h2>
           <div class="accordion__content" id="accordion__content_3" role="region" 
-            aria-hidden="true" aria-labelledby="accordion__title_3" hidden>
+            aria-hidden="true" aria-labelledby="accordion__title_3">
             <p>Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.</p>
           </div>
-          <h2>
+          <h2 class="active">
             <button 
               class="accordion__trigger"
               id="accordion__title_4" 
               aria-controls="accordion__content_4"
-              aria-expanded="false"
+              aria-expanded="true"
               tabindex="0">
               <span class="accordion__heading">
                 Can I cancel my subscription?
               </span>
               <span class="accordion__icon">
-                <img src="images/icon-arrow-down.svg" alt="">
+                <img src="images/icon-arrow-down.svg" alt="" aria-hidden="true">
               </span>
             </button>        
-          </h2>
+          </h2 class="active">
           <div class="accordion__content" id="accordion__content_4" role="region" 
-            aria-hidden="true" aria-labelledby="accordion__title_4" hidden>
+            aria-hidden="true" aria-labelledby="accordion__title_4">
             <p>Yes! Send us a message and we’ll process your request no questions asked.</p>
           </div>
-          <h2>
+          <h2 class="active">
             <button 
               class="accordion__trigger"
               id="accordion__title_5"
               aria-controls="accordion__content_5"
-              aria-expanded="false"
+              aria-expanded="true"
               tabindex="0">
               <span class="accordion__heading">
                 Do you provide additional support?
               </span>
               <span class="accordion__icon">
-                <img src="images/icon-arrow-down.svg" alt="">
+                <img src="images/icon-arrow-down.svg" alt="" aria-hidden="true">
               </span>
             </button>        
           </h2>
           <div class="accordion__content" id="accordion__content_5" role="region" 
-            aria-hidden="true" aria-labelledby="accordion__title_5" hidden>
+            aria-hidden="true" aria-labelledby="accordion__title_5">
             <p>Chat and email support is available 24/7. Phone lines are open during normal business hours.</p>
           </div>
         </section>
-      </div>
+    </div>
     </main>
     <footer>
       <div class="attribution">
         <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="https://github.com/a-woodworth" target="_blank">a-woodworth</a>.</p>
       </div>
     </footer>
+    <script src="app.js"></script>
   </body>
 </html>

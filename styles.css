@@ -19,7 +19,6 @@ p {
 body {
   background: linear-gradient(180deg, hsl(273, 75%, 66%) 0%, hsl(240, 73%, 65%) 100%);
   font-family: "Kumbh Sans", sans-serif;
-  margin-top: 2.5rem;
 }
 
 h1 {
@@ -39,7 +38,7 @@ h1 {
 p {
   font-size: 0.75rem;
   font-weight: 400;
-  color: hsl(240, 6%, 50%);
+  color: hsl(240, 6%, 49%);
   line-height: 1.5;
 }
 
@@ -90,7 +89,12 @@ p {
 main {
   position: relative;
   max-width: 62.5rem;
-  margin: auto;
+  margin: 9rem auto 2rem;
+}
+@media (min-width: 62.5rem) {
+  main {
+    margin: 2rem auto;
+  }
 }
 
 .faq__image,

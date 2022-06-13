@@ -13,12 +13,14 @@ $font-weight--regular: 400;
 $blue: #{'hsl(240, 73%, 65%)'};
 $dark-blue: #{'hsl(238, 29%, 16%)'};
 $dark-gray: #{'hsl(237, 12%, 33%)'};
-$gray: #{'hsl(240, 6%, 50%)'};
 $gray-blue: #{'hsl(240, 5%, 91%)'};
 $purple-rain: #{'linear-gradient(180deg, hsl(273, 75%, 66%) 0%, hsl(240, 73%, 65%) 100%)'};
 $soft-red: #{'hsl(14, 88%, 65%)'};
 $violet: #{'hsl(273, 75%, 66%)'};
 $white: #{'hsl(0, 0%, 100%)'};
+
+// Changed colors from design spec to pass Accessibility Color Contrast Ratio
+$gray: #{'hsl(240, 6%, 49%)'};
 
 // Color Usage
 $color-bg-primary: $purple-rain;

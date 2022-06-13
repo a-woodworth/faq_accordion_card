@@ -8,7 +8,11 @@
 main {
   position: relative;
   max-width: 62.5rem;
-  margin: auto;
+  margin: 9rem auto 2rem;
+
+  @media #{$brkpoint-md}{
+    margin: 2rem auto;
+  }
 }
 
 .faq__image,
