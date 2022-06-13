@@ -93,7 +93,7 @@ main {
 }
 @media (min-width: 62.5rem) {
   main {
-    margin: 2rem auto;
+    margin: auto;
   }
 }
 
