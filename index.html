@@ -43,11 +43,9 @@
           <h1 class="page__title">FAQ</h1>
           <h2>
             <button 
-              class="accordion__trigger" 
+              class="accordion__button" 
               id="accordion__title_1" 
-              aria-controls="accordion__content_1" 
-              aria-expanded="false"
-              tabindex="0">
+              aria-expanded="false">
               <span class="accordion__heading">How many team members can I invite?</span>
               <span class="accordion__icon">
                 <img src="images/icon-arrow-down.svg" alt="" aria-hidden="true">
@@ -58,13 +56,11 @@
             aria-hidden="true" aria-labelledby="accordion__title_1" hidden>
             <p>You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.</p>
           </div>
-          <h2>
+          <h2 class="open">
             <button 
-              class="accordion__trigger"
+              class="accordion__button"
               id="accordion__title_2"
-              aria-controls="accordion__content_2"
-              aria-expanded="false"
-              tabindex="0">
+              aria-expanded="true">
               <span  class="accordion__heading">
                 What is the maximum file upload size?
               </span>
@@ -73,17 +69,15 @@
               </span>
             </button>        
           </h2>
-          <div class="accordion__content" id="accordion__content_2" role="region" 
-            aria-hidden="false" aria-labelledby="accordion__title_2" hidden>
+          <div class="accordion__content open-active" id="accordion__content_2" role="region" 
+            aria-hidden="false" aria-labelledby="accordion__title_2">
             <p>No more than 2GB. All files in your account must fit your allotted storage space.</p>
           </div>
           <h2>
             <button 
-              class="accordion__trigger"
+              class="accordion__button"
               id="accordion__title_3"
-              aria-controls="accordion__content_3"
-              aria-expanded="false"
-              tabindex="0">
+              aria-expanded="false">
               <span class="accordion__heading">
                 How do I reset my password?
               </span>
@@ -98,11 +92,9 @@
           </div>
           <h2>
             <button 
-              class="accordion__trigger"
+              class="accordion__button"
               id="accordion__title_4" 
-              aria-controls="accordion__content_4"
-              aria-expanded="false"
-              tabindex="0">
+              aria-expanded="false">
               <span class="accordion__heading">
                 Can I cancel my subscription?
               </span>
@@ -117,11 +109,9 @@
           </div>
           <h2>
             <button 
-              class="accordion__trigger"
+              class="accordion__button"
               id="accordion__title_5"
-              aria-controls="accordion__content_5"
-              aria-expanded="false"
-              tabindex="0">
+              aria-expanded="false">
               <span class="accordion__heading">
                 Do you provide additional support?
               </span>

@@ -1,17 +1,18 @@
-const accordionButtons = document.querySelectorAll('.accordion__trigger');
+const accordionHeaders = document.querySelectorAll('.accordion h2 button');
 
-accordionButtons.forEach(button => {
-  const expanded = button.getAttribute('aria-expanded');
-  const number = button.getAttribute('id').split('_').pop();
-  const associatedContent = document.getElementById(
-    `accordion__content_${number}`
-  );
+Array.prototype.forEach.call(accordionHeaders, accordionHeader => {
+  let target = accordionHeader.parentElement.nextElementSibling;
+  accordionHeader.onclick = () => {
+    let expanded = accordionHeader.getAttribute('aria-expanded') === 'true' || false;
+    accordionHeader.setAttribute('aria-expanded', !expanded);
+    accordionHeader.parentElement.classList.toggle('open');
+    target.hidden = expanded;
+    target.classList.toggle('open-active'); 
 
-  button.addEventListener('click', () => {
-    console.log('You clicked me!');
-    button.parentNode.classList.add('active');
-    button.setAttribute('aria-expanded', true);
-    associatedContent.setAttribute('aria-hidden', false);
-    associatedContent.removeAttribute('hidden');
-  });
+    if (target.classList.contains('open-active')) {
+      target.setAttribute('aria-hidden', false);
+    } else {
+      target.setAttribute('aria-hidden', true);
+    }
+  }
 });

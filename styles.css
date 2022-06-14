@@ -89,7 +89,7 @@ p {
 main {
   position: relative;
   max-width: 62.5rem;
-  margin: 9rem auto 2rem;
+  margin-top: 9rem;
 }
 @media (min-width: 62.5rem) {
   main {
@@ -151,10 +151,12 @@ main {
     left: -0.5rem;
     top: 58%;
     z-index: 3;
+    height: auto;
   }
 }
 
 .accordion {
+  height: 100%;
   padding: 0 1.5rem 3rem 1.5rem;
 }
 @media (min-width: 62.5rem) {
@@ -174,11 +176,11 @@ main {
   padding-top: 1.25rem;
 }
 
-.accordion h2.active {
+.accordion h2.open {
   border-bottom: none;
 }
 
-.accordion__trigger {
+.accordion__button {
   background-color: hsl(0, 0%, 100%);
   border: none;
   cursor: pointer;
@@ -190,7 +192,7 @@ main {
   padding: 0;
 }
 
-.accordion__trigger:focus {
+h2.accordion__button:focus {
   outline: 4px solid transparent;
 }
 
@@ -209,20 +211,25 @@ main {
   margin-left: auto;
 }
 
-.accordion__content {
+.accordion__content.open-active {
   border-bottom: 1px solid hsl(240, 5%, 91%);
   padding-right: 2rem;
   min-width: 14.6875rem;
   padding-bottom: 1rem;
 }
 
-.accordion__trigger[aria-expanded=true] .accordion__heading {
+.accordion__content[aria-hidden=false] {
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion__button[aria-expanded=true] .accordion__heading {
   font-size: 0.8125rem;
   font-weight: 700;
   color: hsl(238, 29%, 16%);
 }
 
-.accordion__trigger[aria-expanded=true] .accordion__icon {
+.accordion__button[aria-expanded=true] .accordion__icon {
   transform: rotate(-180deg);
 }
 
