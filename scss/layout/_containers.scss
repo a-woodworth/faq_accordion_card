@@ -23,15 +23,13 @@
   margin: auto;
 
   @media #{$brkpoint-md} {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 32rem;
     overflow-x: hidden;
     overflow-y: hidden;
-    width: 57.5rem;
-    display: flex;
-    flex-direction: column nowrap;
-    justify-content: space-evenly;
-    padding-bottom: 5.25rem;
-    padding-top: 4.125rem;
     position: relative;
+    width: 57.5rem;
   }
 }
 
@@ -39,8 +37,6 @@
   padding: 2.5rem 2.8125rem 5rem 2.8125rem;
 
   @media #{$brkpoint-md} {
-    flex-basis: 50%;
-    align-self: flex-start;
     padding: 0;
   }
 }

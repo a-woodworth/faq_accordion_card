@@ -72,8 +72,7 @@ main {
   padding: 0 1.5rem 3rem 1.5rem;
 
   @media #{$brkpoint-md} {
-    flex-basis: 50%;
-    align-self: flex-end;
+    margin-top: 4.0625rem;
     padding: 0 6rem 0 1rem;
   }
 }
@@ -126,11 +125,7 @@ h2.accordion__button:focus {
   padding-right: 2rem;
   min-width: 14.6875rem;
   padding-bottom: 1rem;
-}
-
-.accordion__content[aria-hidden="false"] {
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
+  overflow: auto;
 }
 
 .accordion__button[aria-expanded="true"] .accordion__heading {
@@ -138,5 +133,5 @@ h2.accordion__button:focus {
 }
 
 .accordion__button[aria-expanded="true"] .accordion__icon {
-  transform: rotate(-180deg);
+  transform: rotate(180deg);
 }
