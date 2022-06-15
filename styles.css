@@ -119,7 +119,7 @@ main {
 @media (min-width: 62.5rem) {
   .faq__image {
     height: 22.5rem;
-    left: 0;
+    left: 1.5rem;
     top: 50%;
   }
 }
@@ -133,7 +133,7 @@ main {
 @media (min-width: 62.5rem) {
   .faq__image-shadow {
     height: auto;
-    left: -53%;
+    left: -51%;
     top: 37.25%;
   }
 }
@@ -144,8 +144,8 @@ main {
 @media (min-width: 62.5rem) {
   .faq__image-box {
     display: block;
-    left: -0.5rem;
-    top: 58%;
+    left: 0.5rem;
+    top: 60%;
     z-index: 3;
     height: auto;
   }
