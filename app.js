@@ -1,18 +1,40 @@
-const accordionHeaders = document.querySelectorAll('.accordion h2 button');
+const questions = document.querySelectorAll('.accordion h2 button');
 
-Array.prototype.forEach.call(accordionHeaders, accordionHeader => {
-  let target = accordionHeader.parentElement.nextElementSibling;
-  accordionHeader.onclick = () => {
-    let expanded = accordionHeader.getAttribute('aria-expanded') === 'true' || false;
-    accordionHeader.setAttribute('aria-expanded', !expanded);
-    accordionHeader.parentElement.classList.toggle('open');
-    target.hidden = expanded;
-    target.classList.toggle('open-active'); 
+questions.forEach(question => {
+  question.addEventListener('click', () => {
+    const answer = question.parentElement.nextElementSibling;
 
-    if (target.classList.contains('open-active')) {
-      target.setAttribute('aria-hidden', false);
+    if(question.parentElement.classList.contains('open')) {
+      closeFAQ(question, answer);
     } else {
-      target.setAttribute('aria-hidden', true);
+      // Only allow one open Q & A at a time
+      questions.forEach((openQuestion) => {
+        const openAnswer = openQuestion.parentElement.nextElementSibling;
+        closeFAQ(openQuestion, openAnswer);
+      });
+      openFAQ(question, answer);
     }
-  }
+  });
 });
+
+function closeFAQ(question, answer) {
+  // Update attributes and remove style on question
+  question.parentElement.classList.remove('open');
+  question.setAttribute('aria-expanded', false);
+  
+  // Update attributes and remove style on answer
+  answer.classList.remove('open-active');
+  answer.setAttribute('aria-hidden', true);
+  answer.setAttribute('hidden', '');
+}
+
+function openFAQ(question, answer) {
+  // Update attributes and add style to question
+  question.parentElement.classList.add('open');
+  question.setAttribute('aria-expanded', true);
+
+  // Update attributes and add style to answer
+  answer.classList.add('open-active');
+  answer.setAttribute('aria-hidden', false);
+  answer.removeAttribute('hidden');
+}
