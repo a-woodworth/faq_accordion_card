@@ -32,7 +32,7 @@ Users should be able to:
 ![Mobile Sceenshot](/screenshots/faq-accordion-mobile-375px.png)
 
 ### Links
-- Solution URL: [Solution]()
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/faq-accordion-accessibility-grid-javascript-hhZrG1rBEZ)
 - Live Site URL: [Live Site](https://a-woodworth.github.io/faq_accordion_card/)
 
 ### Built with
@@ -48,6 +48,6 @@ Users should be able to:
 
 - [ARIA Authoring Practices Guide (APG): Accordion (Sections With Show/Hide Functionality)](https://www.w3.org/WAI/ARIA/apg/patterns/accordion/) - Info helped with setting the appropriate aria labels.
 
--[Aditus: Accessible Accordion](https://www.aditus.io/patterns/accordion/) - More info on accessible accordion pattern.
+- [Aditus: Accessible Accordion](https://www.aditus.io/patterns/accordion/) - More info on accessible accordion pattern.
 
 - [NHS Digital Service Manual: Non-JavaScript Accordion Example Using `<details>` Tag](https://service-manual.nhs.uk/design-system/components/expander) - Thought about using this no JS option but wanted to practice JavaScript

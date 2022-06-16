@@ -24,7 +24,6 @@ function closeFAQ(question, answer) {
   
   // Update attributes and remove style on answer
   answer.classList.remove('open-active');
-  answer.setAttribute('aria-hidden', true);
   answer.setAttribute('hidden', '');
 }
 
@@ -35,6 +34,5 @@ function openFAQ(question, answer) {
 
   // Update attributes and add style to answer
   answer.classList.add('open-active');
-  answer.setAttribute('aria-hidden', false);
   answer.removeAttribute('hidden');
 }
