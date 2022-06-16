@@ -46,6 +46,8 @@ Users should be able to:
 
 ### Useful resources
 
-- [ARIA Authoring Practices Guide (APG): Accordion (Sections With Show/Hide Functionality) ](https://www.w3.org/WAI/ARIA/apg/patterns/accordion/) - Info helped with setting the appropriate aria labels.
+- [ARIA Authoring Practices Guide (APG): Accordion (Sections With Show/Hide Functionality)](https://www.w3.org/WAI/ARIA/apg/patterns/accordion/) - Info helped with setting the appropriate aria labels.
+
 -[Aditus: Accessible Accordion](https://www.aditus.io/patterns/accordion/) - More info on accessible accordion pattern.
+
 - [NHS Digital Service Manual: Non-JavaScript Accordion Example Using `<details>` Tag](https://service-manual.nhs.uk/design-system/components/expander) - Thought about using this no JS option but wanted to practice JavaScript
